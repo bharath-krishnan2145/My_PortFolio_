@@ -6,113 +6,112 @@
   }
   
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f7f9fc;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
     color: #333;
     line-height: 1.6;
     padding: 20px;
   }
   
-  /* Navigation */
+  /* Navigation bar */
   nav {
-    background-color: #1d3557;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
     padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 40px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
     text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   }
   
   nav a {
-    color: #f1faee;
-    margin: 0 15px;
+    color: #fff;
+    font-weight: 600;
     text-decoration: none;
-    font-size: 1.1rem;
+    margin: 0 20px;
+    font-size: 1.2rem;
     transition: color 0.3s ease;
   }
   
   nav a:hover {
-    color: #a8dadc;
+    color: #f1faee;
+    text-shadow: 0 0 10px #ffffffaa;
   }
   
-  /* Section container */
+  /* Section styling */
   section {
-    margin-bottom: 60px;
-    padding: 40px 20px;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    max-width: 1000px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   section:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
   }
   
   /* Section headings */
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #ff4e50;
     text-align: center;
-    color: #1d3557;
     margin-bottom: 20px;
-    border-bottom: 2px solid #a8dadc;
+    border-bottom: 3px dashed #ffb199;
     display: inline-block;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
   }
   
-  /* Paragraphs */
+  /* Paragraph text */
   p {
     font-size: 1.1rem;
     text-align: center;
+    color: #555;
     max-width: 800px;
-    margin: 0 auto 20px;
-    color: #444;
+    margin: 0 auto 25px;
   }
   
-  /* Video styling */
+  /* Stylish video player */
   video {
     display: block;
     max-width: 90%;
-    margin: 20px auto;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    margin: 25px auto;
+    border: 5px solid #ee0979;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
   }
   
   video:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
   }
   
   /* Footer */
   footer {
+    background: linear-gradient(to right, #ff6a00, #ee0979);
     text-align: center;
+    color: #fff;
     padding: 20px;
-    background-color: #1d3557;
-    color: #f1faee;
     border-radius: 12px;
-    margin-top: 40px;
-    font-size: 0.95rem;
+    margin-top: 60px;
+    font-size: 1rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   }
   
-  /* Responsive layout */
+  /* Responsive tweaks */
   @media (max-width: 768px) {
     h2 {
-      font-size: 1.5rem;
-    }
-  
-    p {
-      font-size: 1rem;
-      padding: 0 10px;
-    }
-  
-    video {
-      max-width: 100%;
+      font-size: 1.8rem;
     }
   
     nav a {
       display: block;
       margin: 10px 0;
+    }
+  
+    video {
+      width: 100%;
     }
   }
   
